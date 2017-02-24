@@ -1,0 +1,198 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  padding:0;
+  margin:0;
+  margin-bottom: 67px;
+}
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url('http://www.androidcentral.com/sites/androidcentral.com/files/styles/w550h500/public/wallpapers/google-play-gradients-xko.jpg?itok=2lPQ6gDF');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.inner-container{
+  background:rgba(255,153,153,0.3);
+  width:400px;
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  position:absolute;
+  overflow: auto;
+  top:calc(50vh - 230px);
+  left:calc(50vw - 200px);
+  border-radius: 18px;
+}
+
+.box{
+  position:absolute;
+  height:100%;
+  width:100%;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color:#fff;
+  background:rgba(0,0,0,0.13);
+  padding:30px 0px;
+}
+.box h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:30px;
+}
+.box input{
+  display:block;
+  width:330px;
+  margin:20px auto;
+  padding:15px;
+  background:rgba(0,0,0,0.3);
+  color:#fff;
+  border:0;
+  border-radius: 18px;
+}
+.box input:focus,.box input:active,.box button:focus,.box button:active{
+  outline:none;
+}
+.box button{
+  background:#EB4457;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:20px;
+  width:330px;
+  margin:20px auto;
+  display:block;
+  cursor:pointer;
+  border-radius: 18px;
+}
+#login_button{
+
+  margin-top: 1.5cm;
+}
+.box button:active{
+  background:#EB4457;
+}
+.box p{
+  font-size:14px;
+  text-align:center;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+.box p span{
+  cursor:pointer;
+  color:#666;
+}
+
+.box h4 {
+  margin-top: 0.8cm;
+}
+
+.backgroundImageCover{
+  position:relative;
+  min-height: 100%;
+  margin-bottom: -67px; 
+}
+
+.content{
+  position:relative;
+  z-index:2;
+}
+
+.peeraide-footer {
+  background: transparent;
+  z-index: 3;
+  border: none;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 67px;
+  background-color: #EB4457;
+}
+
+.peeraide-footer p {
+  position: absolute;
+  font-family: Papyrus;
+  top: 25px;
+}
+
+#foot {
+  color: #ffffff;
+  background: transparent;
+  padding-left: 60px;
+}
+
+.s-container{
+  padding-right: 60px; 
+}
+
+.peeraide-footer .social-links a{
+  text-align: center;
+  margin-top: 18px;
+  float: right;
+  left: 60px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  margin-right: 7px; /*space between*/
+} 
+
+.peeraide-footer .social-links a i:hover {
+  color: #FFC9C9;
+}
+
+.peeraide-footer .social-links a i{
+  font-size: 20px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+#my-navbar{
+  background: transparent;    
+  border: none;
+}
+
+.navbar-brand {
+  font-family: Papyrus;
+  font-size: 24px;
+}
+
+.inline {
+  display: inline;
+}
+
+#peer-string {
+  color: #CDCACA;
+}
+
+#aide-string {
+  color: #EB4457;
+}
+
+#conf-msg{
+  font-family:Papyrus;
+}
+
+#sentence-msg{
+  font-family:Papyrus;
+}
+
+#login_button{
+  font-family:Papyrus;
+}

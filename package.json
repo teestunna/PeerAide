@@ -1,0 +1,31 @@
+{
+  "name": "PeerAide",
+  "version": "0.0.1",
+  "author": "ChristianMichael, Gueolor Emmanuel, Tope Babajide",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.7.19",
+    "body-parser": "~1.12.0",
+    "compression": "^1.6.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.1",
+    "crypto": "0.0.3",
+    "ejs": "*",
+    "express": "~4.12.2",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.13.0",
+    "multer": "^1.1.0",
+    "mysql": "^2.12.0",
+    "node-cache": "^4.1.1",
+    "nodemailer": "^2.3.2",
+    "nodemailer-mailgun-transport": "git://github.com/orliesaurus/nodemailer-mailgun-transport.git",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "request": "^2.79.0",
+    "shortid": "^2.2.6"
+  }
+}

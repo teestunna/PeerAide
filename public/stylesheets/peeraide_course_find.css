@@ -1,0 +1,934 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  padding:0;
+  margin:0;
+  margin-bottom: 200px;
+  height: 100%;
+  background: #E6E6E6 !important;
+}
+
+.background-image {
+  position: fixed;
+  z-index: 1;
+  display: block;
+  background: #E6E6E6;
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundImageCover{
+  position:relative;
+  min-height: 100%;
+  margin-bottom: -200px; 
+}
+
+.content{
+  position:relative;
+  z-index:2;
+}
+
+.peeraide-footer {
+  padding: 10px 0;
+  height: 67px;
+  z-index: 3;
+  border: none;
+  bottom: 0;
+  width: 100%;
+  background-color: #43b9c7;
+  position: absolute;
+}
+
+.peeraide-footer a{
+  font-size: 15px;
+  padding: 10px;
+  color: white;
+}
+
+.peeraide-footer p{
+  color: #ffffff;
+  margin-top: 0.3cm;
+  font-size:11px;
+}
+
+#my-navbar{
+  background: #43b9c7;
+  border: none;
+}
+
+.navbar-fixed-top {
+    min-height: 90px;
+}
+
+.navbar-brand {
+  font-family: Century Gothic, sans-serif;
+  font-size: 24px;
+}
+
+#course_info {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 0.6px solid white;
+  height: 400px;
+  margin-top: 4cm;
+  z-index: -1;
+}
+
+#rating_tab {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 400px;
+  margin-top: 4cm;
+}
+
+#leave_feed_back textarea {
+  font-size: 1em;
+}
+#leave_feed_back {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 1cm;
+  height: 200px;
+}
+
+#rate_a_prof {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 200px;
+  margin-top: 1cm;
+}
+
+#students_feedback {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 600px;
+  margin-top: 1cm;
+  overflow-y: auto;
+  padding-bottom: .7cm;
+}
+
+#resource_and_connect_tutors {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 600px;
+  margin-top: 1cm;
+  margin-bottom: 300px;
+}
+
+#comments {
+  background:rgba(255,255,255,0.8);
+  bottom: 11px;
+  height: 110px;
+  margin-top: 19px;
+  font-size: 1.3em;
+  font-family: Century Gothic, sans-serif;
+}
+
+#comments:focus{
+  border-color: rgba(255,255,255,0.8);
+  outline: none;
+}
+
+#comment-btn {
+  float: right;
+  border-radius: 14px;
+  font-family: Century Gothic, sans-serif;
+  border: none;
+  height: 40px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #43b9c7;
+  font-size: .9em;
+}
+
+#comment_box {
+  background-color: white;
+  height: auto;
+  margin-top: 1cm;
+}
+
+#annoymous_image_comment {
+  width: 60px;
+  height:60px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+textarea[name=feedback] {
+    resize: none;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+  border-color: rgba(255,138,48,0.3);
+  box-shadow: 0 1px 1px rgba(255,138,48,0.3) inset, 0 0 8px rgba(255,138,48,0.3);
+  outline: 0 none;
+  resize: none;
+}
+
+#star_icon {
+  color: #43b9c7;
+  margin-top: 0.5cm;
+}
+
+#star_icon {
+  text-align: center;
+}
+
+#rate_f_text {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+}
+
+#rate_button {
+  margin-top: -0.1cm;
+  margin:auto;
+  display: table;
+  border:.1px solid white;
+}
+
+#temp_img {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  margin-left: -15px;
+  margin-top: 0px;
+  z-index: -1;
+}
+
+#circle {
+    background: white;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: table;
+    margin: auto; 
+    margin-top: 90px;
+    border: .6px solid #43b9c7;
+}
+
+#course_info_div_cap {
+  margin-top: 0.9cm;
+  margin-left: 20px;
+  color: #43b9c7;
+}
+
+#course_name {
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+  font-size: 2em;
+  margin-top: 0.5cm;
+  color: #898989;
+}
+
+#course_desc {
+  color: #898989;
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+  font-size: 1.1em;
+}
+
+#professor_name {
+  color: #898989;
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+  font-size: 1.1em;
+}
+
+#institution {
+  color: #898989;
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+  font-size: 1.1em;
+}
+
+#clarity_rating {
+  margin: auto;
+  display: table;
+  font-family: Century Gothic, sans-serif;
+  font-size: 1.2em;
+  color: #898989;
+  margin-top: 1.1cm;
+}
+
+.fa-lightbulb-o {
+  color: #43b9c7;
+}
+
+.fa-hand-o-right {
+  color: #43b9c7;
+}
+
+.fa-university {
+  color: #43b9c7;
+}
+
+.fa-plus {
+  color: #43b9c7;
+}
+
+#rate-btn {
+  border-radius: 14px;
+  font-family: Century Gothic, sans-serif;
+  text-align:center;
+  border: none;
+  height: 40px;
+  color: white;
+  background-color: #43b9c7;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: .9em;
+}
+
+#annoymous_image_comment,
+#anonymous_user {
+  display: inline;
+}
+
+#anonymous_user {
+  padding-left: 13px;
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+  margin-top: -3cm;
+}
+
+#date_posted {
+  margin-top: -.5cm;
+  padding-left: 74px;
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+}
+
+#overall_by_user {
+  float: right;
+  margin-top: -1.4cm;
+  padding-right: 10px;
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+}
+
+#actual_comment {
+  text-align: center;
+  color: #898989;
+  font-family: Century Gothic, sans-serif;
+  margin-top: .5cm;
+  padding-bottom: .7cm;
+}
+
+#grade_achieved {
+  font-family: Century Gothic, sans-serif;
+  float: right;
+  color: #898989;
+  padding-right: 10px;
+  margin-top: -.8cm;
+}
+
+#num_of_comments {
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+  font-size: 4em;
+}
+
+#comment_label {
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+  font-size: 1.2em;
+  margin-top: -.7cm;
+}
+
+#star_for_user {
+  color: orange;
+}
+
+/* Strictly for stars */
+
+/* Easiness star configuration */
+#easiness_s {
+  padding-top: .4cm;
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#easiness_s1 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#easiness_s2 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#easiness_s3 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#easiness_s4 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#easiness_gen {
+  margin-left: .5cm;
+  margin-bottom: .6cm;
+}
+
+
+/* Overall star configuration */
+#overall_s {
+  padding-top: .4cm;
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#overall_s1 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#overall_s2 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#overall_s3 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#overall_s4 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#overall_gen {
+  margin-left: .5cm;
+  margin-bottom: .6cm;
+}
+
+
+/* Clarity star configuration */
+#clarity_s {
+  padding-top: .4cm;
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#clarity_s1 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#clarity_s2 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#clarity_s3 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#clarity_s4 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#clarity_gen {
+  margin-left: .5cm;
+  margin-bottom: .8cm;
+}
+
+
+/* Helpfulness star configuration */
+#helpfulness_s {
+  padding-top: .4cm;
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#helpfulness_s1 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#helpfulness_s2 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#helpfulness_s3 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#helpfulness_s4 {
+  margin-right: .5cm;
+  color: #CFCFCF;
+}
+
+#helpfulness_gen {
+  margin-left: .5cm;
+  margin-bottom: .7cm;
+}
+
+/* Rating stars Ends here*/
+#helpfulness_rating {
+  margin: auto;
+  display: table;
+  font-family: Century Gothic, sans-serif;
+  font-size: 1.2em;
+  margin-top: -.3cm;
+  color: #898989;
+}
+
+#easiness_rating {
+  margin: auto;
+  display: table;
+  font-family: Century Gothic, sans-serif;
+  font-size: 1.2em;
+  margin-top: -.3cm;
+  color: #898989;
+}
+
+#overall_rating {
+  margin: auto;
+  display: table;
+  font-family: Century Gothic, sans-serif;
+  font-size: 1.2em;
+  margin-top: -.5cm;
+  color: #898989;
+}
+
+#folder_icon {
+  color: #43b9c7;
+  padding-top: 1.5cm;
+}
+
+#view_resource_btn {
+  border-radius: 14px;
+  font-family: Century Gothic, sans-serif;
+  text-align:center;
+  border: none;
+  height: 40px;
+  color: white;
+  background-color: #43b9c7;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: .9em;
+  margin-top: .6cm;
+}
+
+#tutor_icon {
+  color: #43b9c7;
+  padding-top: 1.2cm;
+}
+
+#view_resources_text {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: .5cm;
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+}
+
+#reuqest_tutor_text {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: .6cm;
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+}
+
+#request_a_tutor_btn {
+  border-radius: 14px;
+  font-family: Century Gothic, sans-serif;
+  text-align:center;
+  border: none;
+  height: 40px;
+  color: white;
+  background-color: #43b9c7;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: .9em;
+  margin-top: .6cm;
+}
+
+#actual_comment {
+  padding-left: 7px;
+  padding-right: 7px;  
+}
+
+@media screen and (max-width: 320px) {
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.3cm;
+    font-size:8px;
+  }
+
+  .container{
+    width: 300px;
+  }
+
+  #course_name{
+    font-size:0.82m;
+  }
+
+  #course_desc{
+    font-size:0.82em;
+  }
+
+  #professor_name{
+    font-size:0.82em;
+  }
+
+  #institution{
+    font-size:0.82em;
+  }
+
+  #rating_tab {
+    margin-top: 1cm;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+
+  .container{
+    width: 350px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.3cm;
+    font-size:10px;
+  }
+
+  #course_name{
+    font-size:0.9m;
+  }
+
+  #course_desc{
+    font-size:0.9em;
+  }
+
+  #professor_name{
+    font-size:0.9em;
+  }
+
+  #institution{
+    font-size:0.9em;
+  }
+
+  #course_name {
+    margin-top: .7cm;
+    font-size: 2.5em;
+  }
+
+  #course_desc {
+    font-size: .8em;
+  }
+
+  #professor_name {
+    font-size: .8em;
+  }
+
+  #institution {
+    font-size: .8em;
+  }
+
+  #rating_tab {
+    margin-top: 1cm;
+  }
+
+  #clarity_rating {
+    font-size: 1.3em;
+    padding-top: 1.1cm;
+  }
+
+  #overall_rating {
+    font-size: 1.3em;
+  }
+
+  #easiness_rating {
+    font-size: 1.3em;
+  }
+
+  #helpfulness_rating {
+    font-size: 1.3em;
+  }
+
+  #leave_feed_back textarea{
+    font-size: 1em;
+  }
+
+  #leave_feed_back {
+    padding-top: .1cm;
+  }
+
+  #rate_f_text {
+    font-size: 1.3em;
+  }
+
+  #star_icon {
+    padding-top: .5cm;
+  }
+
+  #rate-btn {
+    font-size: .8em;
+  }
+
+  #comment-btn {
+    font-size: .8em;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 414px) {
+
+  .container{
+    width: 380px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.3cm;
+    font-size:11px;
+  }
+
+  #course_name{
+    font-size:0.9m;
+  }
+
+  #course_desc{
+    font-size:0.9em;
+  }
+
+  #professor_name{
+    font-size:0.9em;
+  }
+
+  #institution{
+    font-size:0.9em;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 438px) {
+
+  .container{
+    width: 403px;
+  }
+
+  #course_name{
+    font-size:0.9m;
+  }
+
+  #course_desc{
+    font-size:0.9em;
+  }
+
+  #professor_name{
+    font-size:0.9em;
+  }
+
+  #institution{
+    font-size:0.9em;
+  }
+}
+
+@media screen and (min-width: 439px) and (max-width: 468px) {
+
+  .container{
+    width: 423px;
+  }
+}
+
+@media screen and (min-width: 469px) and (max-width: 507px) {
+
+  .container{
+    width: 466px;
+  }
+}
+
+@media screen and (min-width: 508px) and (max-width: 538px) {
+
+  .container{
+    width: 502px;
+  }
+}
+
+@media screen and (min-width: 539px) and (max-width: 579px) {
+
+  .container{
+    width: 536px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.3cm;
+    font-size:10px;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 610px) {
+
+  .container{
+    width: 575px;
+  }
+}
+
+@media screen and (min-width: 611px) and (max-width: 641px) {
+
+  .container{
+    width: 606px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.3cm;
+    font-size:10px;
+  }
+
+}
+
+@media screen and (min-width: 642px) and (max-width: 682px) {
+
+  .container{
+    width: 639px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.3cm;
+    font-size:10px;
+  }
+}
+
+@media screen and (min-width: 683px) and (max-width: 730px) {
+
+  .container{
+    width: 681px;
+  }
+}
+
+@media screen and (min-width: 731px) and (max-width: 760px) {
+
+  .container{
+    width: 720px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.3cm;
+    font-size:10px;
+  }
+
+}
+
+@media screen and (min-width: 761px) and (max-width: 796px) {
+
+  .container{
+    width: 756px;
+  }
+
+  #rating_tab {
+    margin-top: 1cm;
+  }
+ 
+  #clarity_rating {
+    padding-top: 0.9cm;
+  }
+
+  #leave_feed_back {
+    padding-top: 0.1cm;
+    font-size: .8em;
+  }
+
+  #rate_a_prof {
+    padding-top: .1cm;
+  }
+}
+
+@media screen and (min-width: 797px) and (max-width: 833px) {
+
+  .container{
+    width: 789px;
+  }
+}
+
+@media screen and (min-width: 834px) and (max-width: 864px) {
+
+  .container{
+    width: 827px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.3cm;
+    font-size:10px;
+  }
+
+}
+
+@media screen and (min-width: 865px) and (max-width: 890px) {
+
+  .container{
+    width: 859px;
+  }
+
+}
+
+@media screen and (min-width: 891px) and (max-width: 921px) {
+
+  .container{
+    width: 880px;
+  }
+}
+
+@media screen and (min-width: 922px) and (max-width: 952px) {
+
+  .container{
+    width: 910px;
+  }
+}
+
+@media screen and (min-width: 953px) and (max-width: 983px) {
+
+  .container{
+    width: 948px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.3cm;
+    font-size:10px;
+  }
+}
+
+@media screen and (min-width: 984px) and (max-width: 1030px) {
+
+  .container{
+    width: 975px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.3cm;
+    font-size:11px;
+  }
+}
+
+@media screen and (min-width: 1031px) and (max-width: 1061px) {
+
+  .container{
+    width: 1025px;
+  }
+}
+
+@media screen and (min-width: 1061px) and (max-width: 1088px) {
+
+  .container{
+    width: 1050px;
+  }
+}

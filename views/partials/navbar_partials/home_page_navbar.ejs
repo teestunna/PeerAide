@@ -1,0 +1,122 @@
+<div class="container">
+  <div class="navbar-header">
+    <a href="/" class="navbar-brand">
+    	<p class="inline" id="peer-string"> Peer </p>
+    	<p class="inline" id="aide-string"> Aide </p>
+    </a>
+  </div>
+             
+  <div class="nav navbar-nav navbar-right">
+  	<% if (!user) { %>
+    	<button type="submit" class="btn  btn-md navbar-btn" id="myBtn" data-toggle="modal" data-target="#loginModal"><span><i class="fa fa-user-o fa-lg" aria-hidden="true"></i></span> &nbsp SignUp/Login</button>
+    <% } else if(user && Date.now() >= user[0].timeUserLoggedIn) { %>
+    	<button type="submit" class="btn  btn-md navbar-btn" id="myBtn" data-toggle="modal" data-target="#loginModal"><span><i class="fa fa-user fa-lg" aria-hidden="true"></i></span> &nbsp SignUp/Login</button>
+    <% } else { %>
+    	<div class="dropdown">
+    		<% if(user[0].userImagePath) { %>
+	      		<button class="btn btn-lg btn-circle navbar-btn dropdown-btn " id="userBtn" style="font-family:Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; color:white"><img src=<%=users_uploaded_image %> id="now" class="img-circle">&nbsp&nbsp <%= user[0].firstname %> &nbsp&nbsp<span class="caret"></span></button>
+
+	      		<ul class="dropdown-menu">
+					<li>
+				    	<a href="/peeraide/user_profile" id="m-p">
+				        	<i class="fa fa-user fa-3x" id="u-profile"></i>
+				        	My profile
+				         </a>
+				  	</li>
+
+				    <li>
+				    	<a href="" id="a-s">
+				        	<i class="fa fa-cogs fa-2x" id="account-settings"></i>
+				            Account Setting
+				         </a>
+				  	</li>
+
+				    <li>
+				    	<a href="" id="r-s">
+				        	<i class="fa fa-unlock" id="reset-password"></i>
+				            Reset Password
+				    	</a>
+					</li>
+
+					<div class="last">
+				    	<li>
+				        	<a href="/peeraide/user_logout" id="l-out">
+				            	<i class="fa fa-power-off" id="sign-out" aria-hidden="true"></i>
+				              	Logout
+				            </a>
+				      	</li>
+					</div>
+	      		</ul>
+	      	<% } else if(user[0].gender == config.maleUser){ %>
+	      		<button class="btn btn-lg btn-circle navbar-btn dropdown-btn " id="userBtn" style="font-family:Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; color:white"><img src="/img/male_user.png" id="now" class="img-circle">&nbsp&nbsp <%= user[0].firstname %> &nbsp&nbsp<span class="caret"></span></button>
+
+	      		<ul class="dropdown-menu">
+					<li>
+				    	<a href="/peeraide/user_profile" id="m-p">
+				        	<i class="fa fa-user fa-3x" id="u-profile"></i>
+				        	My profile
+				         </a>
+				  	</li>
+
+				    <li>
+				    	<a href="" id="a-s">
+				        	<i class="fa fa-cogs fa-2x" id="account-settings"></i>
+				            Account Setting
+				         </a>
+				  	</li>
+
+				    <li>
+				    	<a href="" id="r-s">
+				        	<i class="fa fa-unlock" id="reset-password"></i>
+				            Reset Password
+				    	</a>
+					</li>
+
+					<div class="last">
+				    	<li>
+				        	<a href="/peeraide/user_logout" id="l-out">
+				            	<i class="fa fa-power-off" id="sign-out" aria-hidden="true"></i>
+				              	Logout
+				            </a>
+				      	</li>
+					</div>
+	      		</ul>
+	      	<% } else if(user[0].gender == config.femaleUser) { %>
+	      		<button class="btn btn-lg btn-circle navbar-btn dropdown-btn " id="userBtn" style="font-family:Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; color:white"><img src="/img/female_user.png" id="now" class="img-circle">&nbsp&nbsp <%= user[0].firstname %> &nbsp&nbsp<span class="caret"></span></button>
+
+	      		<ul class="dropdown-menu">
+					<li>
+				    	<a href="/peeraide/user_profile" id="m-p">
+				        	<i class="fa fa-user fa-3x" id="u-profile"></i>
+				        	My profile
+				         </a>
+				  	</li>
+
+				    <li>
+				    	<a href="" id="a-s">
+				        	<i class="fa fa-cogs fa-2x" id="account-settings"></i>
+				            Account Setting
+				         </a>
+				  	</li>
+
+				    <li>
+				    	<a href="" id="r-s">
+				        	<i class="fa fa-unlock" id="reset-password"></i>
+				            Reset Password
+				    	</a>
+					</li>
+
+					<div class="last">
+				    	<li>
+				        	<a href="/peeraide/user_logout" id="l-out">
+				            	<i class="fa fa-power-off" id="sign-out" aria-hidden="true"></i>
+				              	Logout
+				            </a>
+				      	</li>
+					</div>
+	      		</ul>
+	      	<% } %>
+    	</div>
+    <% } %>
+  </div>      
+</div>

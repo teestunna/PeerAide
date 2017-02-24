@@ -1,0 +1,47 @@
+<div class="bcg">
+	<div class="hsContainer">
+		<div class="hsContent">
+			<div class="jumbotron text-center">
+    		<h1 id="my-title"> <%= title %> </h1>
+        
+    		<p id="around-corner">Where help is just around the corner !</p> 
+        <label for="sel1" id="label-sel1"><strong>Select Your University</strong></label>
+
+  			<form class="form-inline" method="get" action="/peeraide_api/course_name" id="search-for-courses">
+          <div class="form-group">
+            <select class="form-control" id="sel1" name="unis">
+              <% peeraide_universities.forEach(function(unis) { %>
+                <option> <%= unis %> </option>
+              <% }); %>
+            </select>
+
+    			  <!--<input type="text" id="search-course" class="form-control" size="50" name="course_name" placeholder="Enter course name"> -->
+
+            <div id="course_search_container">
+              <div class="course_search_content">
+                <div class="course_search_elements" style="display:inline-block;">
+                    <span><input type="text" id="course_desc" name="course_name" placeholder="course description"/></span>
+                </div>
+
+                  <div class="course_search_elements" style="display:inline-block;">   
+                    <span><input type="text" id="course_code" name="course_code" placeholder="course code"/></span>
+                  </div>
+              </div>
+            </div>
+
+            <input type="text" id="search-professor" class="form-control" size="50" name="professor_name" placeholder="Enter professor name (Optional eg. fName lName)">
+          </div>
+          <div class="Session">
+            <input type="radio" id="radio01" name="term" value="Fall"/>
+            <label for="radio01"><span></span>Fall&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+
+            <input type="radio" id="radio02" name="term" value="Winter"/>
+            <label for="radio02"><span></span>Winter</label>
+          </div>
+          <button type="submit" id= "Gobutton" class="btn ">Go !</button>  
+  			</form>
+  			<br>
+			</div>
+		</div>
+	</div>
+</div>

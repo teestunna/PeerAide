@@ -1,0 +1,700 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  padding-bottom: 4cm;
+  margin:0;
+  margin-bottom: 67px;
+  font-family:Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+*:focus {
+  outline:none !important;
+}
+
+#hr_total {
+  border-top: 1px solid #EB4457;
+}
+
+#user-fa {
+  color: #EB4457;
+}
+
+#time-fa {
+  color: #EB4457;
+}
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url('http://www.freebiesgallery.com/wp-content/uploads/2013/09/white-background-3.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.backgroundImageCover{
+  position:relative;
+  min-height: 100%;
+  margin-bottom: -67px;
+}
+
+.content{
+  padding-top: 1.8cm;
+  position:relative;
+  font-family:Helvetica;
+  z-index:2;
+  padding-bottom: 4cm;
+}
+
+.peeraide-footer {
+  background: transparent;
+  z-index: 3;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 67px;
+  background-color: #EB4457;
+}
+
+.peeraide-footer p {
+  position: absolute;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  top: 25px;
+}
+
+#foot {
+  color: #ffffff;
+  background: transparent;
+  padding-left: 60px;
+}
+
+.s-container{
+  padding-right: 60px; 
+}
+
+.peeraide-footer .social-links a{
+  text-align: center;
+  margin-top: 18px;
+  float: right;
+  left: 60px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  margin-right: 7px; /*space between*/
+} 
+
+.peeraide-footer .social-links a i:hover {
+  color: #FFC9C9;
+}
+
+.peeraide-footer .social-links a i{
+  font-size: 20px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+#my-navbar{   
+  background: transparent;    
+  border: none;
+}
+
+#left{
+  background: #EB4457;
+  background:rgba(255,153,153,0.3);
+  border-radius: 18px;
+  border: none;
+}
+
+#right{
+  background: #EB4457;
+  border: none;
+  background:rgba(255,153,153,0.3);
+  border-radius: 18px;
+}
+
+.btn{
+  color: white;
+}
+#postComment{
+  margin-left: 12.85cm; 
+}
+
+#course_credentials {
+  border-radius: 16px;
+  background:rgba(255,255,255,0.4);
+  margin-bottom: 1cm;
+  border-color: #EB4457;
+}
+
+#instructor_name {
+  border-radius: 16px;
+  background:rgba(255,255,255,0.4);
+  margin-bottom: 10px;
+  border-color: #EB4457;
+}
+
+#instructor_rating {
+  border-radius: 16px;
+  background:rgba(255,255,255,0.4);
+  margin-bottom: 0.3cm;
+  border-color: #EB4457;
+}
+
+#institution{
+  border-radius: 16px;
+  background:rgba(255,255,255,0.4);
+  border-color: #EB4457;
+}
+
+#comments {
+  border-radius: 8px;
+  background:rgba(255,255,255,0.8);
+  bottom: 11px;
+  height: 90px;
+}
+
+#comments:focus{
+  border-color: rgba(255,255,255,0.8);
+  outline: none;
+}
+
+#comment-btn {
+  left: 230px;
+  border-radius: 8px;
+  width: 100px;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#institutution_name{
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  margin-bottom: 0px;
+}
+
+#rate {
+  left: 230px;
+  border-radius: 8px;
+  width: 100px;
+  margin-top: 0.7em;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#ex1Slider .slider-selection {
+  background: #EB4457;
+}
+
+.btn-circle.btn-xl {
+  width: 80px;
+  height: 80px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 40px;
+}
+
+#circles-1 .circles-decimals {
+  font-size: .6em;
+}
+
+#circles-1 .circles-text {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#circles-2 .circles-decimals {
+  font-size: .5em;
+}
+
+#circles-2 .circles-text {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: white;
+}
+
+#circles-2 {
+  text-align: center;
+  margin-top: 1.5em;
+  border: none;
+}
+
+#circles-3 .circles-decimals {
+  font-size: .5em;
+}
+
+#circles-3 .circles-text {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: white;
+}
+
+#circles-3 {
+  text-align: center;
+  margin-top: 1.5em;
+  border: none;
+}
+
+#circles-4 .circles-decimals {
+  font-size: .5em;
+}
+
+#circles-4 .circles-text {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: white;
+}
+
+#circles-4 {
+  text-align: center;
+  margin-top: 1.5em;
+  border: none;
+}
+
+#circles-5 .circles-decimals {
+  font-size: .5em;
+}
+
+#circles-5 .circles-text {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: white;
+}
+
+#circles-5 {
+  text-align: center;
+  margin-top: 1.5em;
+  border: none;
+}
+
+#ex1Slider .slider-selection {
+  background: #BABABA;
+}
+
+.close{
+  color: #FFFFFF !important;
+  opacity: 1;
+}
+
+#rateHead{
+  margin-top: 2cm;
+  background: transparent;
+  border: 0 !important;
+  box-shadow: none;
+  margin-left: 3.5cm;
+  margin-bottom: 3cm;
+}
+
+#rateBod{
+  width: 150%;
+  height: 100%;
+  background: transparent;
+  border: 0 !important;
+  box-shadow: none;
+}
+
+#rate-btn {
+  margin-top: 0.8cm;
+  margin-left: 2.4cm;
+  border-radius: 8px;
+  width: 100px;
+  border: none;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+  border-color: rgba(255,138,48,0.3);
+  box-shadow: 0 1px 1px rgba(255,138,48,0.3) inset, 0 0 8px rgba(255,138,48,0.3);
+  outline: 0 none;
+}
+
+#courseid {
+  margin-bottom: 0.4cm;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#courseoffer{
+  margin-top: 0.6cm;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#resources-text {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#coursedesc{
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+#coursedept{
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#tutors-text {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#tutorbutton{
+  margin-bottom: 0.6cm;
+}
+
+#instructor-text {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  text-align: center;
+}
+
+#instructor-name{
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#instructor-rate-name{
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+textarea {
+  resize: none;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 25pt;
+}
+
+#commentz{
+  margin-top: 0.5cm;
+  display:none;
+}
+
+#load-more{
+  margin-top: 10cm;
+  border-radius: 8px;
+  width: 180px;
+  margin-right: 3.0cm;
+}
+
+#color-it{
+  background:rgba(255,138,48,0.3);
+  height: 0.5cm;
+}
+
+#commentNum hr{
+  margin-top: 4.5cm;
+}
+
+#load-more-btn{
+  /*margin-top: 9.5cm;*/
+  border-radius: 10px;
+  margin-right: 0.8cm;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#num{
+  margin-top: 2.3cm;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: #EB4457;
+  font-size: 40px;
+}
+
+#stat{
+  float: right;
+}
+
+#numLabel{
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  margin-top: -0.5cm;
+  color: #EB4457;
+  font-size: 15px
+}
+
+.bubble img {
+  float:left;
+  width:70px;
+  height:70px;
+  background-color: #e6e6e6;
+  border:1px solid rgba(255,255,255,0.8);
+  border-radius:10px;
+  border-color: white;
+}
+.bubble-content {
+  position:relative;
+  float:left;
+  margin-left:12px;
+  width:443px;
+  padding:0px 20px;
+  border-radius:10px;
+  background-color:#FFFFFF;
+  box-shadow:1px 1px 5px rgba(0,0,0,.2);
+  height: 70px relative;
+  background:rgba(255,255,255,0.8);
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  border:none;
+}
+
+.bubble-content p {
+  margin-top: 0.5cm;
+}
+
+#uid{
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 12px;
+  float: left;
+  font-weight: bold;
+  color: #737373;
+}
+.bubble-content hr{
+  margin-bottom: -0.3cm;
+  color: #EB4457 !important;
+  height: 1px !important;
+  
+}
+
+#date{
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  float: right;
+  font-weight: bold;
+  font-size: 11px;
+  color: #737373;
+}
+
+
+.clearfix:after {
+  visibility:hidden;
+  display:block;
+  font-size:0;
+  content: ".";
+  clear:both;
+  height:0;
+  line-height:
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+.clearfix {
+  height: 2cm;
+}
+
+.navbar-brand {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 24px;
+}
+
+.inline {
+  display: inline;
+}
+
+#peer-string {
+  color: #CDCACA;
+}
+
+#aide-string {
+  color: #EB4457;
+}
+
+a, a:visited {
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#loadMore {
+  padding: 10px;
+  text-align: center;
+  background:#EB4457;
+  color: #fff;
+  border-radius: 10px;
+  width: 11.8cm;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  margin-left: 2.5cm;
+  opacity: 0.7;
+  transition: all 600ms ease-in-out;
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+}
+
+#loadMore:hover {
+    background-color: #FFC9C9;
+    color: #050505;
+}
+
+img{
+  border: 0;
+}
+
+#total_rated{
+  margin-top: 0.3cm;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+#resources-btn {
+  border-radius: 100%;
+}
+
+div.stars {
+  width: 270px;
+  display: inline-block;
+}
+
+input.star { display: none; }
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 34px;
+  color: white;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before { color: #F62; }
+
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+#easiness {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: white;
+  font-size: 1.3em;
+  margin-left: 2.2cm;
+}
+
+#clarity {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: white;
+  font-size: 1.3em;
+  margin-left: 2.5cm;
+  margin-top: 0.4cm;
+}
+
+#Toughness {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: white;
+  font-size: 1.3em;
+  margin-left: 2.2cm;
+  margin-top: 0.4cm;
+}
+
+#Helpfulness {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: white;
+  font-size: 1.3em;
+  margin-left: 2.2cm;
+  margin-top: 0.4cm;
+}
+
+#Overall {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: white;
+  font-size: 1.3em;
+  margin-left: 2.4cm;
+  margin-top: 0.4cm;
+}
+
+#easiness_rating {
+  text-align: center;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+
+#toughness_rating {
+  text-align: center;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 1.5em;
+  color: white;
+  margin-top: 2em;
+}
+
+#clarity_rating {
+  text-align: center;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 1.5em;
+  color: white;
+  margin-top: 2em;
+}
+
+#helpfulness_rating {
+  text-align: center;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 1.5em;
+  color: white;
+  margin-top: 2em;
+}
+
+#advanced_rating_modal {
+  background: transparent;
+  border: 0 !important;
+  box-shadow: none;
+  margin-top: 5em;
+}
+
+#advanced_rating_bod {
+  background: transparent;
+  border: 0 !important;
+  box-shadow: none;
+}
+
+#total_rated_easiness {
+  text-align: center;
+  margin-top: 1em;
+  color: white;
+  margin-bottom: 3em;
+}
+
+#total_rated_toughness {
+  text-align: center;
+  margin-top: 1em;
+  color: white;
+  margin-bottom: 3em;
+}
+
+#top {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+#bottom {
+  margin-bottom: 3em;
+}
+
+#adv_rating {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#adv_ratn {
+  color: black;
+}
+
+#adv_ratn:hover {
+  color: #767676;
+}
+
+#adv_ratn_awesome {
+  color: black;
+}
+
+#adv_ratn_awesome:hover {
+  color: #767676;
+}

@@ -1,0 +1,39 @@
+<!Doctype html>
+<html lang "en">
+	<head>
+		<% include ../partials/headers_partials/header %>
+	</head>
+
+	<body>
+
+    <div class="loading" style="background-repeat: no-repeat; position: absolute; top: 50%; left: 50%; margin-top: -50px; margin-left: -50px; width: 100px; height: 100px;">
+      <center><img src="../img/ico_loading.gif"/></center>
+    </div>
+  		
+    <div class="home-page-content" style="display: none;">
+  		<!-- navbar -->
+  		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+  			<% include ../partials/navbar_partials/home_page_navbar %>
+  		</nav>
+  		
+  		<!-- login modal/ signup modal -->
+      <% include ../partials/body_partials/loginOrSignInModal %>
+
+      <main>
+        <section id="slide-1" class="homeSlide">
+          <% include ../partials/body_partials/homeSlide1 %>
+        </section>
+      </main>
+    </div>
+
+      <% include ../partials/script_partials/scripts %>
+      <script src="/js/password_strength_validator.js"></script>
+      <script>
+        $(window).load(function(){
+          $(".loading").fadeOut("slow", function(){
+            $(".home-page-content").fadeIn("slow");
+          });
+        });
+      </script>
+	</body>
+</html>

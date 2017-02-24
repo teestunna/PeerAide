@@ -1,0 +1,139 @@
+<div class="backgroundImageCover">
+	<div class="background-image"></div>
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8" id="course_info">
+					<img src="https://files.graphiq.com/2307/media/images/Pacific_Blue_1395389.png" id="temp_img">
+					<div id="circle">
+						<i class="fa fa-graduation-cap fa-5x" aria-hidden="true" id="course_info_div_cap"></i>
+					</div>
+					<p id="course_name">COMP 2404</p>
+					<p id="course_desc"> <span><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>&nbsp Introduction to software Engineering </p>
+					<p id="professor_name"> <span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>&nbsp Professor/Instructor Name: Christine Laurendeau</p>
+					<p id="institution"> <span><i class="fa fa-university" aria-hidden="true"></i></span> &nbsp Institution: Carleton University</p>
+				</div>
+
+				<div class="col-lg-1"></div>
+				
+				<div class="col-lg-3" id="rating_tab" align="center">
+
+					<p id="clarity_rating">Clarity Rating (0/5)</p>
+
+					<div class="clarity_stars">
+						<div id="clarity_gen">
+						    <label id="clarity_s"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="clarity_s1"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="clarity_s2"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="clarity_s3"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="clarity_s4"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						</div>
+					</div>
+
+					<p id="overall_rating">Overall Rating (0/5)</p>
+
+					<div class="overall_stars">
+						<div id="overall_gen">
+						    <label id="overall_s"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="overall_s1"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="overall_s2"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="overall_s3"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="overall_s4"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						</div>
+					</div>
+
+					<p id="easiness_rating">Easiness Rating (0/5)</p>
+
+					<div class="easiness_stars">
+						<div id="easiness_gen">
+						    <label id="easiness_s"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="easiness_s1"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="easiness_s2"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="easiness_s3"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="easiness_s4"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						</div>
+					</div>
+
+
+					<p id="helpfulness_rating">Helpfulness Rating (0/5)</p>
+
+					<div class="helpfulness_stars">
+						<div id="helpfulness_gen">
+						    <label id="helpfulness_s"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="helpfulness_s1"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="helpfulness_s2"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="helpfulness_s3"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						    <label id="helpfulness_s4"> <i class="fa fa-star fa-2x" aria-hidden="true"></i></label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-8" id="leave_feed_back">
+					<form role="form" method="POST" action="/peeraide/users_comment">
+		                <div class="form-group">
+		                  <textarea class="form-control" name="feedback" placeholder="Leave a feedback for your peers ...." id="comments"></textarea>
+		                </div>
+
+		                <button type="submit" id="comment-btn"><span><i class="fa fa-comment fa-lg" aria-hidden="true"></i>&nbsp&nbsp</span>Post Feedback</button><br>
+		             </form>
+				</div>
+
+				<div class="col-lg-1"></div>
+
+				<div class="col-lg-3" id="rate_a_prof">
+					<div id="inner_div-rate_a_prof" align="center">
+						<p id="star_icon"> <i class="fa fa-star fa-3x" aria-hidden="true"></i></p>
+						<p id="rate_f_text"> Rate this Professor </p>
+						<hr>
+
+						<button type="submit" id="rate-btn"><span><i class="fa fa-star fa-lg" aria-hidden="true"></i>&nbsp&nbsp</span>Rate Prof/Instructor</button><br>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-8" id="students_feedback">
+					<div id="no_of_comments">
+						<p id="num_of_comments"> 4 </p>
+						<p id="comment_label"> Feedbacks </p>
+						<hr>
+					</div>
+					<% for(var i =0; i <= 4; i++) { %>
+						<div id="comment_box">
+							<img src="/img/male_user.png" id="annoymous_image_comment">
+							<p id="anonymous_user">Anonymous</p>
+							<p id="date_posted">Jan 30, 2017</p>
+							<p id="overall_by_user"><span><i class="fa fa-star" aria-hidden="true" id="star_for_user"></i></span>&nbspOverall: 3.5/5</p>
+							<p id="grade_achieved">Grade achieved: <strong>A+</strong></p>
+							<hr>
+							<p id="actual_comment"> 
+								In my opinion, Christine is one of the best instructors I've ever had. She's incredibly knowledgeable, and her lectures are very clear and easy to understand. Each assignment has a clear purpose, so you know exactly what concepts are being practiced. She's a bit strict, but if you pay attention in class and make a genuine effort, you'll do well.
+							</p>
+						</div>
+					<% } %>
+				</div>
+
+				<div class="col-lg-1"></div>
+
+				<div class="col-lg-3" id="resource_and_connect_tutors">
+					<div id="inner_div_view_a_resource" align="center">
+						<p id="folder_icon"><i class="fa fa-briefcase fa-3x" aria-hidden="true"></i></p>
+						<p id="view_resources_text"> View COMP 2404 Resources </p>
+
+						<button type="submit" id="view_resource_btn"><span><i class="fa fa-folder" aria-hidden="true"></i>&nbsp&nbsp</span>View Resources</button><br>
+					</div>
+					<br><br><br>
+					<hr>
+					<div id="inner_div_request_a_tutor" align="center">
+						<p id="tutor_icon"><i class="fa fa-search fa-3x" aria-hidden="true"></i></p>
+						<p id="reuqest_tutor_text"> Find a COMP 2404 Tutor </p>
+
+						<button type="submit" id="request_a_tutor_btn"><span><i class="fa fa-search" aria-hidden="true"></i>&nbsp&nbsp</span>View Resources</button><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

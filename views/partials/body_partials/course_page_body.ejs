@@ -1,0 +1,238 @@
+<div class="backgroundImageCover">
+  <div class="background-image"></div>
+  <div class="content">
+    <div class="container text-center">    
+      <div class="row">
+        <div class="col-sm-3 well" id="left">
+          <div class="well" id="course_credentials">
+            <h2 id="courseid"><strong><%= course_name %></strong></h2>
+            <p id="coursedesc"> <%= course_description %> </p>
+            <p id="coursedept"><span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>&nbsp&nbsp<strong> <%= department %> </strong></p>
+            <p id="courseoffer"><strong><%= offering_time_course %></strong></p>
+          </div>
+          
+          <p id="resources-text">Resources</p>
+
+          <button id="resources-btn" type="button" class="btn btn-danger btn-circle btn-xl" data-toggle="modal" data-target="#resourceModal"><center><i class="fa fa-archive fa-lg" aria-hidden="true"></i></center></button>
+          <hr id="hr_total">
+
+          <p id="tutors-text">Request a Tutor</p>
+
+          <button type="button"  id="tutorbutton" class="btn btn-danger btn-circle btn-xl" data-toggle="modal" data-target="#tutorModal"><center><i class="fa fa-bar-chart fa-lg" aria-hidden="true" id="adv-ratings"></i></center></button>
+        </div>
+
+        <div class="col-sm-6" id="commenting-div">
+          <div class="row">
+
+            <div class="col-sm-12">
+              <form role="form" method="POST" action="/peeraide/users_comment">
+                <div class="form-group">
+                  <textarea class="form-control" name="feedback" placeholder="Leave feedback for your peers..." id="comments"></textarea>
+                </div>
+
+                <div class="col-sm-2">
+                  <button type="submit" class="btn btn-danger" id="comment-btn"><span><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp&nbsp</span>Post</button>
+                </div>
+              </form>
+
+              <div class="col-sm-12" id="commentNum">
+                <div id="stat">
+                  <center><p id="num"> <%= total_comments %> </p></center>
+                  <center><p id="numLabel">Feedback/s</p></center>
+                </div>
+                <hr id="hr_total">
+              </div>
+
+              <% for(var comments = user_comm.length; comments-- > 0;) { %>
+              <% if(comments % 2 === 0) { %>
+              <div id="commentz">
+                <div class="bubble-list">
+                  <div class="bubble clearfix">
+                    <img src="../img/user_comment_4.png"></img>
+                    <div class="bubble-content">
+                      <p id="commentPosted"> <%= user_comm[comments] %> </p>
+                      <hr style="background-color: #EB4457; border: none;">
+                      <p id="uid"><span><i class="fa fa-user" aria-hidden="true" id="user-fa"></i></span>&nbsp&nbsp<strong>Anonymous</strong></p>
+                      <p id="date"><span><i class="fa fa-clock-o" aria-hidden="true" id="time-fa"></i></span>&nbsp&nbsp<strong><%= date_posted[comments] %></strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <% } else { %>
+              <div id="commentz">
+                <div class="bubble-list">
+                  <div class="bubble clearfix">
+                    <img src="../img/user_comment_5.png"></img>
+                    <div class="bubble-content">
+                      <p id="commentPosted"> <%= user_comm[comments] %> </p>
+                      <hr style="background-color: #EB4457; border: none;">
+                      <p id="uid"><span><i class="fa fa-user" aria-hidden="true" id="user-fa"></i></span>&nbsp&nbsp<strong>Anonymous</strong></p>
+                      <p id="date"><span><i class="fa fa-clock-o" aria-hidden="true" id="time-fa"></i></span>&nbsp&nbsp<strong><%= date_posted[comments] %></strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <% } %>
+              <% } %>
+            </div>
+          </div>
+
+          <% for(var comments = 0; comments < user_comm.length; comments++) { %>
+          <% if(user_comm.length >= 4) { %>
+          <a href="#" id="loadMore"><span><i class="fa fa-comments-o" aria-hidden="true"></i></span>&nbsp&nbspLoad More Feedbacks</a>
+          <% break %>
+          <% } %>
+          <% } %>
+        </div>
+
+        <div class="col-sm-3 well" id="right">
+          <div class="well" id="instructor_name">
+            <h3 id="instructor-text"><strong>Prof / Instructor</strong></h3>
+            <p id="instructor-name"><span><i class="fa fa-hand-o-right fa-lg" aria-hidden="true"></i></span>&nbsp&nbsp<%= instructors_name %></p>
+            <button type="submit" id="rate" class="btn btn-danger" data-toggle="modal" data-target="#ratingModal"><span><i class="fa fa-star" aria-hidden="true"></i></span>&nbsp&nbspRate Prof</button>
+          </div>
+
+          <div class="well" id="instructor_rating">
+            <p id="instructor-rate-name"><span><i class="fa fa-star" aria-hidden="true"></i></span>&nbsp&nbsp<strong>Prof/Instructor Rating</strong></p>
+            <br>
+            <div class="circle" id="circles-1"></div>
+            <p id="total_rated"><i class="fa fa-asterisk" aria-hidden="true"></i>&nbsp&nbsp<strong> <%= num_individuals_rated %></strong> <span><strong> rating/s Overall</strong></span></p>
+            <p id="adv_rating"> <a href="" id="adv_ratn" data-toggle="modal" data-target="#tutorModal"> <span><i class="fa fa-bar-chart fa-lg" id="adv_ratn_awesome" aria-hidden="true"></i></span></a></p> 
+          </div>
+
+          <div class="well" id="institution">
+            <p id="instructor-rate-name"><span><i class="fa fa-university" aria-hidden="true"></i></span>&nbsp&nbsp<strong>Institution</strong></p>
+            <p id="institutution_name"><%= chosen_uni %></p>     
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Resource modal -->
+<div class="modal fade" id="resourceModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 style="color:#EB4457; font-family:Candara;"><span><i class="fa fa-archive fa-lg" aria-hidden="true"></i></span>&nbsp&nbspResources</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer"> </div>
+    </div>
+  </div>
+</div> 
+
+<div class="modal fade" id="tutorModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content" id="advanced_rating_modal">
+      <div class="modal-header" id="advanced_rating_bod">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <hr id="top">
+        <p id="easiness_rating"> <span><i class="fa fa-heart" aria-hidden="true"></i></span>&nbsp&nbspEasiness </p>
+        <div class="circle" id="circles-2"></div>
+        <p id="total_rated_easiness"><i class="fa fa fa-bar-chart" aria-hidden="true"></i>&nbsp&nbsp<%= num_individuals_rated %>&nbsp rating/s</p>
+        <hr>
+        <p id="toughness_rating"> <span><i class="fa fa-bolt fa-lg" aria-hidden="true"></i></span>&nbsp&nbspToughness </p>
+        <div class="circle" id="circles-3"></div>
+        <p id="total_rated_toughness"><i class="fa fa fa-bar-chart" aria-hidden="true"></i>&nbsp&nbsp<%= num_individuals_rated %>&nbsp rating/s</p>
+        <hr>
+        <p id="clarity_rating"> <span><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></span>&nbsp&nbspClarity </p>
+        <div class="circle" id="circles-4"></div>
+        <p id="total_rated_toughness"><i class="fa fa fa-bar-chart" aria-hidden="true"></i>&nbsp&nbsp<%= num_individuals_rated %>&nbsp rating/s</p>
+        <hr>
+        <p id="helpfulness_rating"> <span><i class="fa fa-life-ring" aria-hidden="true"></i></span>&nbsp&nbspHelpfulness </p>
+        <div class="circle" id="circles-5"></div>
+        <p id="total_rated_toughness"><i class="fa fa fa-bar-chart" aria-hidden="true"></i>&nbsp&nbsp<%= num_individuals_rated %>&nbsp rating/s</p>
+        <hr id="bottom">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ratingModal" role="dialog">
+  <div class="modal-dialog" id="rateDialog">
+    <div class="modal-content" id="rateHead" style="width:40%">
+      <div class="modal-header" id="rateBod">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <form method="POST" action="/peeraide/user_rated" id="user-has-rated">
+          <p id="easiness"><span><i class="fa fa-heart" aria-hidden="true"></i></span></span>&nbsp Easiness </p> 
+          <div class="stars">
+            <input class="star star-5" name="rating" id="star-5" type="radio" value="5"/>
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" name="rating" id="star-4" type="radio" value="4"/>
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" name="rating" id="star-3" type="radio" value="3"/>
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" name="rating" id="star-2" type="radio" value="2"/>
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" name="rating" id="star-1" type="radio" value="1"/>
+            <label class="star star-1" for="star-1"></label>
+          </div>
+
+          <p id="clarity"> <span><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></span>&nbsp Clarity </p> 
+          <div class="stars">
+            <input class="star star-5" name="rating1" id="star-5-1" type="radio" value="5"/>
+            <label class="star star-5" for="star-5-1"></label>
+            <input class="star star-4" name="rating1" id="star-4-1" type="radio" value="4"/>
+            <label class="star star-4" for="star-4-1"></label>
+            <input class="star star-3" name="rating1" id="star-3-1" type="radio" value="3"/>
+            <label class="star star-3" for="star-3-1"></label>
+            <input class="star star-2" name="rating1" id="star-2-1" type="radio" value="2"/>
+            <label class="star star-2" for="star-2-1"></label>
+            <input class="star star-1" name="rating1" id="star-1-1" type="radio" value="1"/>
+            <label class="star star-1" for="star-1-1"></label>
+          </div>
+
+          <p id="Toughness"><i class="fa fa-bolt fa-lg" aria-hidden="true"></i></i></span>&nbsp Toughness </p> 
+          <div class="stars">
+            <input class="star star-5" name="rating2" id="star-5-2" type="radio" value="5"/>
+            <label class="star star-5" for="star-5-2"></label>
+            <input class="star star-4" name="rating2" id="star-4-2" type="radio" value="4"/>
+            <label class="star star-4" for="star-4-2"></label>
+            <input class="star star-3" name="rating2" id="star-3-2" type="radio" value="3"/>
+            <label class="star star-3" for="star-3-2"></label>
+            <input class="star star-2" name="rating2" id="star-2-2" type="radio" value="2"/>
+            <label class="star star-2" for="star-2-2"></label>
+            <input class="star star-1" name="rating2" id="star-1-2" type="radio" value="1"/>
+            <label class="star star-1" for="star-1-2"></label>
+          </div>
+
+          <p id="Helpfulness"><i class="fa fa-life-ring" aria-hidden="true"></i></span>&nbsp Helpfulness </p> 
+          <div class="stars">
+            <input class="star star-5" name="rating3" id="star-5-3" type="radio" value="5"/>
+            <label class="star star-5" for="star-5-3"></label>
+            <input class="star star-4" name="rating3" id="star-4-3" type="radio" value="4"/>
+            <label class="star star-4" for="star-4-3"></label>
+            <input class="star star-3" name="rating3" id="star-3-3" type="radio" value="3"/>
+            <label class="star star-3" for="star-3-3"></label>
+            <input class="star star-2" name="rating3" id="star-2-3" type="radio" value="2"/>
+            <label class="star star-2" for="star-2-3"></label>
+            <input class="star star-1" name="rating3" id="star-1-3" type="radio" value="1"/>
+            <label class="star star-1" for="star-1-3"></label>
+          </div>
+
+          <p id="Overall"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>&nbsp Overall </p> 
+          <div class="stars">
+            <input class="star star-5" name="rating4" id="star-5-4" type="radio" value="5"/>
+            <label class="star star-5" for="star-5-4"></label>
+            <input class="star star-4" name="rating4" id="star-4-4" type="radio" value="4"/>
+            <label class="star star-4" for="star-4-4"></label>
+            <input class="star star-3" name="rating4" id="star-3-4" type="radio" value="3"/>
+            <label class="star star-3" for="star-3-4"></label>
+            <input class="star star-2" name="rating4" id="star-2-4" type="radio" value="2"/>
+            <label class="star star-2" for="star-2-4"></label>
+            <input class="star star-1" name="rating4" id="star-1-4" type="radio" value="1"/>
+            <label class="star star-1" for="star-1-4"></label>
+          </div>
+
+          <button type="submit" class="btn btn-danger" id="rate-btn"><span><i class="fa fa-star-half-o" aria-hidden="true"></i></span>&nbsp&nbspRate</button>
+        </form> 
+      </div>
+    </div>
+  </div>
+</div> 

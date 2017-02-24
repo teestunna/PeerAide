@@ -1,0 +1,74 @@
+<!Doctype html>
+<html lang "en">
+
+<head>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <% include ../partials/headers_partials/user_profile_header%>
+</head>
+
+<body>
+
+	<div class="loading" style="background-repeat: no-repeat; position: absolute; top: 50%; left: 50%; margin-top: -50px; margin-left: -50px; width: 100px; height: 100px;">
+      <center><img src="../img/ico_loading.gif"/></center>
+    </div>
+
+
+    <div class="home-page-content" style="display: none;">
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+			<% include ../partials/navbar_partials/user_profile_navbar %>
+		</nav>
+		
+		<div class="page-wrap">
+			<% include ../partials/body_partials/user_profile_body %>
+		</div>
+		
+		<footer class="peeraide-footer" align="center">
+	    	<% include ../partials/footer_partials/footer %>
+		</footer>
+	</div>
+	
+	<% include ../partials/script_partials/scripts %>
+
+	<script>
+		(function ($) {
+			$(document).ready(function(){
+		  		$(function () {
+		        	$(window).scroll(function () {
+		            	if ($(this).scrollTop() < 100) {
+		                	$('.navbar').fadeIn();
+		            	} else {
+		                	$('.navbar').fadeOut();
+		            	}
+		        	});
+		    	});
+			});
+		}(jQuery));
+	</script>
+
+	<script type="text/javascript">
+        $(window).load(function(){
+          $(".loading").fadeOut("", function(){
+            $(".home-page-content").fadeIn();
+          });
+        });
+	</script>
+	
+	<script type="text/javascript">
+		$("#file-upload-button").change(function () {
+			var fileName = $(this).val().replace('C:\\fakepath\\', '');
+			$("#file-upload-filename").html(fileName);
+		});
+
+		$("#file-upload-button1").change(function () {
+			var fileName = $(this).val().replace('C:\\fakepath\\', '');
+			$("#file-upload-filename1").html(fileName);
+		});
+
+		var loadFile = function(event) {
+    		var image_uploaded = document.getElementById('image_uploaded');
+    		image_uploaded.src = URL.createObjectURL(event.target.files[0]);
+  		};
+	</script>
+</body>
+
+</html>

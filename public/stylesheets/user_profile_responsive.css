@@ -1,0 +1,126 @@
+@media  screen  and  (width: 452px){
+
+  #user_profile_img{
+    width: 30%;
+  }
+
+  #middle{
+    margin-right: 5cm;
+  }
+
+  .search-form{
+    margin-left: 2.3cm;
+    margin-top: -2cm;
+    width: 100%;
+    height: 30%;
+  }
+
+  .search-form .form-group:hover,
+  .search-form .form-group.hover {
+    width: 30%;
+    border-radius: 2px 12.5px 12.5px 2px;
+  }
+
+   #userBtn{
+    margin-left: 9cm;
+    margin-top: -1.7cm;
+    font-size: 5px;
+
+   }
+
+   #sidebar{
+      height: 7cm;
+      width: 4cm;
+      margin-bottom: 8cm;
+  }
+   
+   #foot{
+    margin-left: 1cm;
+    font-size: 3px;
+   }
+}
+
+@media  screen  and  (max-width: 778px){
+  #userBtn{
+    margin-right: 2cm;
+  }
+
+  .dropdown {
+    position: relative;
+    /** Make it fit tightly around it's children */
+    display: inline-block;
+  }
+
+  .dropdown .dropdown-menu {
+    position: relative;
+    top: 100%;
+    right: 0;
+    /** Allow no empty space between this and .dropdown */
+    margin: 2cm -4cm 0 0cm;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    /** Show dropdown menu */
+    display: block;
+  }
+
+  #user_profile_img{
+    width: 70%;
+  }
+
+  #middle{
+    margin-left: 1cm;
+    width: 40%;
+    height: 6cm;
+    margin-top: 0cm;
+    padding-top: 1.2cm;
+  }
+}
+
+@media  screen  and  (max-width: 800px){
+
+  #userBtn{
+    font-size: 0.9em;
+  }
+
+  #sidebar{
+    height: 6cm;
+    margin-top: 0;
+  }
+
+  #sidebar ul li a {
+    height: 1.5cm;
+    padding: 5px 10px;
+    font-family: Papyrus;
+    font-size: 10px;
+    font-weight: 100;
+    color: white;
+    border-bottom: none;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #C9223D;
+    -webkit-transition:  background 0.3s ease-in-out;
+    -moz-transition:  background 0.3s ease-in-out;
+    -ms-transition:  background 0.3s ease-in-out;
+    -o-transition:  background 0.3s ease-in-out;
+    transition:  background 0.3s ease-in-out;
+  }
+
+  #user_profile_img{
+    width: 40%;
+  }
+
+  #middle{
+    height: 5.9cm;
+    margin-left: 0.8cm;
+    margin-top: 0cm;
+    padding-top: 1.3cm;
+
+  }
+}
+
+@media  screen  and  (min-width: 1176px){
+  #middle{
+    margin-left: -1cm;
+  }
+}

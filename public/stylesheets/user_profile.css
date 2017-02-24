@@ -1,0 +1,3106 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+
+  padding:0;
+  margin:0;
+  margin-bottom: 200px;
+  height: 100%;
+  background: #E6E6E6 !important;
+}
+
+.peeraide-footer {
+  padding: 10px 0;
+  height: 67px;
+  z-index: 3;
+  border: none;
+  bottom: 0;
+  width: 100%;
+  background-color: #43b9c7;
+  position: absolute;
+}
+
+.peeraide-footer a{
+   font-size: 15px;
+   padding: 10px;
+   color: white;
+}
+
+.peeraide-footer p{
+  color: #ffffff;
+  margin-top: 0.3cm;
+  font-size:11px;
+}
+
+#my-navbar{
+  background: #43b9c7;
+  border: none;
+}
+
+.navbar-fixed-top {
+    max-height: 90px;
+}
+
+#logo{
+  margin-left: -0.2cm;
+}
+
+#hoy {
+  margin-top: 0.2cm;
+}
+
+#userBtn{
+  border-radius: 0px 0px 15px 15px;
+  outline: none;
+  margin-top: 0.4cm;
+  margin-right: 0.5cm;
+  font-size: 1em;
+  text-indent: 6px;
+  line-height: 35.5px;
+  height: 60px;
+  background: transparent;
+}
+
+#userBtn img {
+  border: 1px solid white;
+}
+
+#quotes {
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+  font-size: 1em;
+}
+
+#quote-icon {
+  color: #43b9c7;
+}
+
+.quote-header {
+  font-family: Century Gothic, sans-serif;
+  margin-bottom: 0.5cm;
+  color: #43b9c7;
+}
+
+.quotes-of-the-day {
+  width: 370px;
+}
+
+.user-image {
+  width: 200px;
+  height: 200px;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+}
+
+.user-image img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.become-a-tutor a {
+  text-align: center;
+  float: right;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #43b9c7;
+  border-radius: 100%;
+  margin-bottom: 0.4cm;
+  color: #43b9c7;
+}
+
+.become-a-tutor a i{
+  font-size: 20px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+#author-of-quote {
+  font-family: Century Gothic, sans-serif;
+  font-size: 1em;
+  color: #43b9c7;
+}
+
+*:focus {
+  outline:none !important;
+}
+
+#upload-my-image {
+  color: #43b9c7;
+}
+
+#upload-my-image:hover {
+  color: #43b9c7;;
+}
+
+#close_upload_image{
+  color: #898989 !important;
+  font-size: 2.5em;
+  font-family: Century Gothic, sans-serif;
+  opacity: 1;
+}
+
+#upload_image_content {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 1.3cm;
+  width: 460px;
+  margin-left: 2cm;
+}
+
+#upload_resources_modal{
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#close_upload_resource {
+  color: #898989 !important;
+  font-size: 2.5em;
+  font-family: Century Gothic, sans-serif;
+  opacity: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0.4cm;
+  margin: 0;
+}
+
+#image-to-upload {
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+  font-size: 1.5em;
+  margin-top: 1cm;
+}
+
+#submit-file {
+  font-family: Century Gothic, sans-serif;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 1.2cm;
+  background-color: #43b9c7;
+  color: white;
+  border: none;
+  width: 150px;
+  margin-bottom: 0.3cm;
+}
+
+#userBtn img{
+  float: left;
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+#userBtn #now {
+  width: 40px;
+  height: 40px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu li a:hover{
+  background: transparent;
+}  
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background: #E6E6E6;
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundImageCover{
+  position:relative;
+  min-height: 100%;
+  margin-bottom: -67px;
+}
+
+.content{
+  padding-top: 1.8cm;
+  position:relative;
+  font-family: Century Gothic, sans-serif;
+  z-index:2;
+  padding-bottom: 4cm;
+}
+
+.navbar-brand {
+  font-family: Century Gothic, sans-serif;
+  font-size: 24px;
+  margin-top: 0.5cm;
+}
+
+#userDiv{
+  margin-top: 2cm;
+  border-radius: 40px 40px 0px 0px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-style: solid;
+  border-width: 0.6px;
+  border-color: white;
+}
+
+#userImg{
+  margin-top: 1.5cm;
+  margin-bottom: 1.5cm;
+}
+
+#userMenu{
+  margin-top: 1cm;
+  margin-bottom: 5cm;
+  border-radius: 0px 0px 40px 40px;
+  background-color: rgba(255,255,255,0.7);
+  border-style: solid;
+  border-width: 0.6px;
+  border-color: white;
+}
+
+#u-name{
+  font-family: Century Gothic, sans-serif;
+  font-size: 2.3em;
+  color: #898989;
+  margin-top: 0.7cm;
+  margin-bottom: 0.5cm;
+}
+
+#userMenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin: 0;
+}
+
+#users-options li:last-child a {
+  border-bottom: none;
+} 
+
+#opt1 {
+  margin-top: 0.55cm;
+  color: #43b9c7;
+}
+
+#opt2 {
+  margin-top: 0.55cm;
+  color: #43b9c7;
+}
+
+#opt3 {
+  margin-top: 0.55cm;
+  color: #43b9c7;
+}
+
+#opt4 {
+  margin-top: 0.55cm;
+  color: #43b9c7;
+}
+
+#userMenu ul li a {
+  height: 2.5cm;
+  padding: 15px 20px;
+  font-family: Century Gothic, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #898989;
+  border-bottom: none;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #898989;
+  -webkit-transition:  background 0.3s ease-in-out;
+  -moz-transition:  background 0.3s ease-in-out;
+  -ms-transition:  background 0.3s ease-in-out;
+  -o-transition:  background 0.3s ease-in-out;
+  transition:  background 0.3s ease-in-out;
+}
+
+form-style-7{
+  max-width:400px;
+  margin:50px auto;
+  background:#fff;
+  border-radius:2px;
+  padding:20px;
+  font-family: Century Gothic, sans-serif;
+}
+
+.form-style-7 h1{
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0px 0px 20px 0px;
+  color: #43b9c7;
+  font-size:x-large;
+}
+
+.form-style-7 ul{
+  list-style:none;
+  padding:0;
+  margin:0;   
+}
+
+.form-style-7 li{
+  display: block;
+  padding: 9px;
+  border:1px solid #43b9c7;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+
+.form-style-7 li:last-child{
+  border:none;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.form-style-7 li > label{
+  display: block;
+  float: left;
+  margin-top: -25px;
+  background: white;
+  height: 26px;
+  padding: 2px 5px 2px 5px;
+  color: #43b9c7;
+  font-size: 20px;
+  overflow: hidden;
+  font-family: Century Gothic, sans-serif;
+}
+
+.form-style-7 input[type="text"],
+.form-style-7 input[type="number"]
+{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  height: 28px;
+  line-height: 25px;
+  font-size: 16px;
+  padding: 0;
+  font-family: Century Gothic, sans-serif;
+}
+
+.form-style-7 input[type="text"]:focus,
+.form-style-7 input[type="number"]:focus
+{
+}
+
+.form-style-7 li > span{
+  background: #43b9c7;
+  display: block;
+  padding: 3px;
+  margin: 0 -9px -9px -9px;
+  text-align: center;
+  color: white;
+  font-family: Century Gothic, sans-serif;
+  font-size: 11px;
+}
+
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"]{
+  margin-top: 1cm;
+  background: #43b9c7;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  font-family: Century Gothic, sans-serif;
+  border-radius: 8px;
+  margin-bottom: 0.4cm;
+}
+
+#choose_uni {
+  margin-top: 1cm;
+  color: #898989;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Century Gothic, sans-serif;
+}
+
+#sel1 {
+  font-family: Century Gothic, sans-serif;
+  width: 330px;
+  border-outline: #43b9c7;
+  margin-bottom: 1cm;
+  margin-left: 3.0cm;
+}
+
+#resource-to-upload {
+  font-size: 1.5em;
+  color: #898989;
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+}
+
+.left {
+  float: left;
+}
+
+.both {
+  clear: both;
+}
+
+.file-upload-container {
+  width:400px;
+  border: 1px solid #43b9c7;
+  padding:10px;
+  border-radius: 6px;
+  margin-left: 2.1cm;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  background: #fbfbfa;
+}
+
+.file-upload-override-button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-color:#43b9c7;
+  height: 50px;
+  color: white;
+  font-family: Century Gothic, sans-serif;
+  width: 140px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 8px;
+}
+
+.file-upload-override-button:active {
+  position:relative; top:1px;
+}
+
+.file-upload-button {
+  position: absolute;
+  height: 50px;
+  top: -10px;
+  left: -10px;
+  cursor: pointer;
+  opacity: 0;
+  filter:alpha(opacity=0);
+}
+
+.file-upload-filename {
+  margin-left: 10px;
+  height: auto;
+  line-height: 35px;
+  color: #898989;
+  padding: 8px;
+}
+
+#side_note {
+  text-align: center;
+  font-size: 0.8em;
+  color: #898989;
+}
+
+.file-upload-container1 {
+  width:350px;
+  border: none;
+  padding:10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  background: #fbfbfa;
+}
+
+.file-upload-override-button1 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-color:#43b9c7;
+  height: 50px;
+  color: white;
+ font-family: Century Gothic, sans-serif;
+  width: 140px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 8px;
+}
+
+.file-upload-override-button1:active {
+  position:relative; top:1px;
+}
+
+.file-upload-button1 {
+  position: absolute;
+  height: 50px;
+  top: -10px;
+  left: -10px;
+  cursor: pointer;
+  opacity: 0;
+  filter:alpha(opacity=0);
+}
+
+.file-upload-filename1 {
+  margin-left: 10px;
+  height: auto;
+  line-height: 35px;
+  color: #898989;
+  padding: 8px;
+}
+
+#side_note1 {
+  text-align: center;
+  font-size: 0.8em;
+  color: #898989;
+}
+
+#image_preview {
+ font-family: Century Gothic, sans-serif;
+  color: #898989;
+}
+
+.fa-eye {
+  color: #43b9c7;
+}
+
+#close_view_resource {
+  color: #898989 !important;
+  font-size: 2.5em;
+ font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------*/
+/* CSS to style table to display user's uploaded past questions */
+/*--------------------------------------------------------------*/
+#wrapper { 
+  background: #eee;
+  font-family: Century Gothic, sans-serif;
+  font-size: 65.5%;
+  line-height: 1;
+  color: #585858;
+  padding: 22px 10px;
+  padding-bottom: 55px;
+  width: 100px;
+}
+
+::selection { background: #5f74a0; color: #fff; }
+::-moz-selection { background: #5f74a0; color: #fff; }
+::-webkit-selection { background: #5f74a0; color: #fff; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+#wrapper {
+  display: block;
+  width: 100%;
+  height: 200px; 
+  overflow-y : auto;
+  background: rgb(255, 248, 248, 0.7);
+  margin: 0 auto;
+  padding: 0px 0px;
+}
+
+#keywords {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+#keywords thead {
+  cursor: pointer;
+  background: #43b9c7;
+  color: white;
+}
+
+#keywords thead tr th { 
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+
+#keywords thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
+  background: #43b9c7;
+}
+
+#keywords thead tr th.headerSortUp span {
+  background-image: url('http://i.imgur.com/SP99ZPJ.png');
+}
+
+#keywords thead tr th.headerSortDown span {
+  background-image: url('http://i.imgur.com/RkA9MBo.png');
+}
+
+#keywords tbody tr { 
+  color: #555;
+}
+
+#keywords tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+
+#keywords tbody tr td.lalign {
+  text-align: center;
+}
+
+#total_points_earned {
+  text-align: center;
+ font-family: Century Gothic, sans-serif;
+  color: #898989;
+  margin-bottom: 2em;
+}
+
+#simple_note {
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+  color: #898989;
+  font-size: 0.7em;
+  margin-top: 2em;
+}
+
+#view_resources_modal {
+  margin-top: 8.5em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (min-width: 318px) and (max-width: 350px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(137, 137, 137, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    color: #898989;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 275px;
+    height: auto;
+    overflow:visible;
+    margin-left: 24px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 275px;
+    height: auto;
+    overflow:visible;
+    margin-left: 24px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    color: #43b9c7;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    color: #898989;
+    font-size: 1em;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 152px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2cm;
+    margin-left: 162px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+    background: #43b9c7;
+   
+  }
+
+  #view_resources_modal {
+    margin-top: 8.5em;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 0.69em;
+  }
+
+  .file-upload-container {
+    width:240px;
+    border: 1px solid #43b9c7;
+    padding:10px;
+    border-radius: 6px;
+    margin-left: 0.3cm;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #fbfbfa;
+  }
+
+  .file-upload-override-button {
+    width: 100px;
+    font-size: 0.7em;
+  }
+
+  #file-upload-filename {
+    font-size: 0.7em;
+  }
+
+  #sel1 {
+    font-family: Century Gothic, sans-serif;
+    width: 240px;
+    border-outline: #43b9c7;
+    margin-bottom: 1cm;
+    margin-left: 0.3cm;
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.9em;
+    line-height: 6px;
+    color: #898989;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 375px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(137, 137, 137, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    color: #898989;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 320px;
+    height: auto;
+    overflow:visible;
+    margin-left: 30px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 320px;
+    height: auto;
+    overflow:visible;
+    margin-left: 30px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    color: #43b9c7;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    color: #898989;
+    font-size: 1em;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 206px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 215px;
+    font-size: 1em;
+    text-indent: 6px;
+    line-height: 35.5px;
+    height: 60px;
+    background: #43b9c7;
+  }
+
+  #userBtn #now {
+    width: 35px;
+    height: 35px;
+  }
+
+   #view_resources_modal {
+    margin-top: 8.5em;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 0.82em;
+  }
+
+  .file-upload-container {
+    width:290px;
+    border: 1px solid #898989;
+    padding:10px;
+    border-radius: 6px;
+    margin-left: 0.5cm;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #fbfbfa;
+  }
+
+  #sel1 {
+    font-family: Century Gothic, sans-serif;
+    width: 290px;
+    border-outline: #86063A;
+    margin-bottom: 1cm;
+    margin-left: 0.5cm;
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.9em;
+    line-height: 6px;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 3.0cm;
+    width: 302px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ .file-upload-container1 {
+    width:280px;
+    border: none;
+    padding:10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #fbfbfa;
+  }
+
+ .file-upload-override-button1 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color:#86063A;
+    height: 40px;
+    color: white;
+    font-family: Century Gothic, sans-serif;
+    width: 130px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 8px;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 12px;
+     padding: 10px;
+     color: white;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 400px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ .file-upload-container1 {
+    width:310px;
+    border: none;
+    padding:10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #fbfbfa;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    color: #86063A;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 320px;
+    height: auto;
+    overflow:visible;
+    margin-left: 50px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 320px;
+    height: auto;
+    overflow:visible;
+    margin-left: 50px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  .dropdown{
+    margin-left: 58px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 165px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 175px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  #view_resources_modal {
+    margin-top: 8.5em;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95em;
+  }
+
+  .file-upload-container {
+    width:290px;
+    border: 1px solid #86063A;
+    padding:10px;
+    border-radius: 6px;
+    margin-left: 0.8cm;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #fbfbfa;
+  }
+
+  #sel1 {
+    font-family: Century Gothic, sans-serif;
+    width: 290px;
+    border-outline: #86063A;
+    margin-bottom: 1cm;
+    margin-left: 0.8cm;
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.7em;
+    line-height: 6px;
+    color: #86063A;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 438px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 390px;
+    height: auto;
+    overflow:visible;
+    margin-left: 26px;
+  }
+
+  .dropdown{
+    margin-left: 55px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 213px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 390px;
+    height: auto;
+    overflow:visible;
+    margin-left: 26px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    color: #43b9c7;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 228px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+   
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+  .file-upload-container {
+    width:290px;
+    border: 1px solid #86063A;
+    padding:10px;
+    border-radius: 6px;
+    margin-left: 0.9cm;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #fbfbfa;
+  }
+
+  #sel1 {
+    font-family: Century Gothic, sans-serif;
+    width: 290px;
+    border-outline: #86063A;
+    margin-bottom: 1cm;
+    margin-left: 0.9cm;
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.9em;
+    line-height: 6px;
+    color: #86063A;
+  }
+}
+
+@media screen and (min-width: 439px) and (max-width: 499px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 390px;
+    height: auto;
+    overflow:visible;
+    margin-left: 26px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px; 
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 390px;
+    height: auto;
+    overflow:visible;
+    margin-left: 26px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  .dropdown{
+    margin-left: 55px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 213px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 245px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+   .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 533px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 390px;
+    height: auto;
+    overflow:visible;
+    margin-left: 60px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 390px;
+    height: auto;
+    overflow:visible;
+    margin-left: 60px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+   .dropdown{
+    margin-left: 57px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 248px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 260px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+  }
+
+  .file-upload-container {
+    width:290px;
+    border: 1px solid #86063A;
+    padding:10px;
+    border-radius: 6px;
+    margin-left: 1.8cm;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #fbfbfa;
+  }
+
+  #sel1 {
+    font-family: Century Gothic, sans-serif;
+    width: 290px;
+    border-outline: #86063A;
+    margin-bottom: 1cm;
+    margin-left: 1.8cm;
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.7em;
+    line-height: 6px;
+    color: #86063A;
+  }
+}
+
+@media screen and (min-width: 534px) and (max-width: 558px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 390px;
+    height: auto;
+    overflow:visible;
+    margin-left: 86px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 390px;
+    height: auto;
+    overflow:visible;
+    margin-left: 86px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  .dropdown{
+    margin-left: 57px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 273px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 283px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+}
+
+@media screen and (min-width: 559px) and (max-width: 598px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 390px;
+    height: auto;
+    overflow:visible;
+    margin-left: 90px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 390px;
+    height: auto;
+    overflow:visible;
+    margin-left: 90px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+ 
+  .dropdown{
+    margin-left: 57px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 278px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 288px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.9em;
+    line-height: 6px;
+    color: #86063A;
+  }
+}
+
+@media screen and (min-width: 599px) and (max-width: 640px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 450px;
+    height: auto;
+    overflow:visible;
+    margin-left: 80px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 450px;
+    height: auto;
+    overflow:visible;
+    margin-left: 80px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  .dropdown{
+    margin-left: 56px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 329px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 342px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+   .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.9em;
+    line-height: 6px;
+    color: #86063A;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 686px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 450px;
+    height: auto;
+    overflow:visible;
+    margin-left: 110px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 450px;
+    height: auto;
+    overflow:visible;
+    margin-left: 110px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+ .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+  .dropdown{
+    margin-left: 56px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 360px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 370px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+  
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.9em;
+    line-height: 6px;
+    color: #86063A;
+  }
+}
+
+@media screen and (min-width: 687px) and (max-width: 698px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 450px;
+    height: auto;
+    overflow:visible;
+    margin-left: 130px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 450px;
+    height: auto;
+    overflow:visible;
+    margin-left: 130px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  .dropdown{
+    margin-left: 56px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 380px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 389px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.9em;
+    line-height: 6px;
+    color: #86063A;
+  }
+}
+
+@media screen and (min-width: 699px) and (max-width: 729px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 480px;
+    height: auto;
+    overflow:visible;
+    margin-left: 115px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 480px;
+    height: auto;
+    overflow:visible;
+    margin-left: 115px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+   .dropdown{
+    margin-left: 56px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 395px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 403px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+   .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+}
+
+@media screen and (min-width: 730px) and (max-width: 768px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: -5.2cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: 6cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #userDiv{
+    margin-top: 2.5cm;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 570px;
+    height: auto;
+    overflow:visible;
+    margin-left: 95px;
+  }
+
+  #userMenu{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 0px 0px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+    width: 570px;
+    height: auto;
+    overflow:visible;
+    margin-left: 95px;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  .dropdown{
+    margin-left: 56px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0.4cm;
+    margin-top: -0.5cm;
+    margin-left: 461px;
+  }
+
+  #userBtn{
+    border-radius: 0px 0px 15px 15px;
+    outline: none;
+    margin-top: -2.0cm;
+    margin-left: 472px;
+    font-size: 1em;
+    text-indent: 6px;
+    height: 60px;
+  }
+
+   .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+   .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.9em;
+    line-height: 6px;
+    color: #86063A;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+  .become-a-tutor a {
+    text-align: center;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    margin-bottom: 0.4cm;
+    margin-top: -1.6cm;
+  }
+
+  .become-a-tutor a i{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  .user-image {
+    width: 160px;
+    height: 160px;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(137, 137, 137, 0.5);  
+  }
+
+  .user-image img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .quotes-of-the-day {
+    width: 250px;
+    height:auto;
+    margin-top: -0.1cm;
+  }
+
+  #u-name{
+    font-family: Century Gothic, sans-serif;
+    font-size: 2.3em;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+  }
+
+  #author-of-quote {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  #quotes {
+    font-family: Century Gothic, sans-serif;
+    font-size: 1em;
+  }
+
+  .peeraide-footer {
+    background: transparent;
+    text-align: center;
+    z-index: 3;
+    border: none;
+    position: absolute;
+    margin-bottom: 0cm;
+    bottom: 0;
+    width: 100%;
+    height: 67px;
+    background-color: #43b9c7;
+  }
+
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.8em;
+    line-height: 6px;
+    color: #86063A;
+  }
+}
+
+
+
+@media screen and (min-width: 520px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen (min-width: 605px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+   .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+}
+
+@media screen and (min-width: 805px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+}
+
+@media screen and (min-width: 905px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+}
+
+@media screen and (min-width: 981px) {
+
+  #foot {
+    color: #ffffff;
+    background: transparent;
+    margin-left: 270px;
+    margin-top: 0.1cm;
+  }
+}
+
+@media screen and (min-width: 1005px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+   .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+}
+
+@media screen and (min-width: 1105px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+}
+
+@media screen and (min-width: 1107px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 2.0cm;
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+}
+
+@media screen and (min-width: 1205px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 2cm;
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+  #view_resource {
+    height: 20px;
+    font-size: 0.6em;
+    line-height: 7px;
+    color: black;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+}
+
+@media screen and (min-width: 1305px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer {
+    padding: 10px 0;
+  }
+
+  .peeraide-footer a{
+     font-size: 15px;
+     padding: 10px;
+     color: white;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+}
+
+@media screen and (min-width: 1405px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+}
+
+@media screen and (min-width: 1505px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+}
+
+@media screen and (min-width: 1605px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+}
+
+@media screen and (min-width: 1705px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+}
+
+@media screen and (min-width: 1805px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+}
+
+@media screen and (min-width: 1905px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+}
+
+@media screen and (min-width: 2005px) {
+
+ #upload_image_content {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4.0cm;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .peeraide-footer p{
+    color: #ffffff;
+    margin-top: 0.15cm;
+  }
+
+}

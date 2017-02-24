@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  	<% include ../partials/headers_partials/course_find_header %>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<% include ../partials/navbar_partials/course_find_navbar %>
+	</nav>
+
+	<div class="page-wrap">
+    	<% include ../partials/body_partials/peeraide_course_find_body %>
+	</div>
+
+	<footer class="peeraide-footer" align="center">
+        <% include ../partials/footer_partials/footer %>
+	</footer>
+    <% include ../partials/script_partials/scripts %>
+
+    <script type="text/javascript">
+    	document.getElementById('clarity_s').style.color = "#43b9c7";
+    	document.getElementById('clarity_s1').style.color = "#43b9c7";
+    </script>
+
+    <script>
+		(function ($) {
+			$(document).ready(function(){
+		  		$(function () {
+		        	$(window).scroll(function () {
+		            	if ($(this).scrollTop() < 100) {
+		                	$('.navbar').fadeIn();
+		            	} else {
+		                	$('.navbar').fadeOut();
+		            	}
+		        	});
+		    	});
+			});
+		}(jQuery));
+	</script>
+  </body>
+</html>

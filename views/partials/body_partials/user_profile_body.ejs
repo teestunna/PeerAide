@@ -1,0 +1,191 @@
+<div class="backgroundImageCover">
+  <div class="background-image"></div>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12" id="userDiv">
+          <center>
+            <div class="user-image">
+              <% if(user[0].gender == config.maleUser && !user[0].userImagePath) { %>
+              <img draggable="false" src="/img/male_user.png" class="rounded" />
+              <% } else if(user[0].gender == config.femaleUser && !user[0].userImagePath) { %>
+              <img draggable="false" src="/img/female_user.png" class="rounded" />
+              <% } else { %>
+              <img draggable="false" src=<%=users_uploaded_image %> class="rounded" />
+              <% } %>
+            </div>
+            <div class="quotes-of-the-day">
+              <h3 class="quote-header"><span><i class="fa fa-quote-left" aria-hidden="true" id="quote-icon"></i></span>&nbsp&nbspQuote of the Day <span><i class="fa fa-quote-right" aria-hidden="true" id="quote-icon"></i></span></h3>
+              <p id="quotes"> 
+                <span id="left-quote">"</span>
+                <%= quote_of_the_day %>
+                <span id="right-quote">"</span>
+              </p>
+              <p id="author-of-quote"><span>"</span> <%= author_of_the_days_quote %> <span>"</span></p>
+            </div>
+            <p id="u-name">Hello, <%= user[0].firstname %>!</p>
+
+            <% if(!user[0].userImagePath) { %>
+            <div class="become-a-tutor col-lg-12">
+              <a href="#" data-toggle="modal" data-target="#uploadUserImage"><i class="fa fa-camera fa-lg" aria-hidden="true" id="upload-my-image"></i></a>
+            </div>
+            <% } %>
+          </center>
+        </div>
+      </div>
+
+      <div class="row">
+        <div clsass="col-lg-12">
+          <div class="col-lg-4" id="userMenu">
+            <ul id="users-options">
+              <li><a href="#"><i class="fa fa-plus-square fa-2x" aria-hidden="true" id="opt1"></i><span>&nbsp&nbsp&nbspSuggest a Course</span></a></li>
+              <li><a href="#" data-toggle="modal" data-target="#upload_resources"><i class="fa fa-upload fa-2x" aria-hidden="true" id="opt2"></i><span></span>&nbsp&nbsp&nbspUpload Resource</a></li>
+              <li><a href="/peeraide/peeraide_lobby" target="_blank"><i class="fa fa-users fa-2x" aria-hidden="true" id="opt4"></i><span></span>&nbsp&nbsp&nbspConnect with Peers</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#view_resources"><i class="fa fa-folder fa-2x" aria-hidden="true" id="opt3"></i><span>&nbsp&nbsp&nbspView Your Resources</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="uploadUserImage" role="dialog">
+  <div class="modal-dialog" id="yes">
+    <div class="modal-content" id="upload_image_content">
+      <div class="modal-header">
+        <button type="button" class="close"  id="close_upload_image" data-dismiss="modal">&times;</button>
+        <h4 style="color:#43b9c7; font-family:Candara;"><span><i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i></span>&nbsp&nbspUpload Image</h4>
+      </div>
+      <div class="modal-body">
+        <center>
+          <p id="image_preview"> <span><i class="fa fa-eye fa-lg" aria-hidden="true"></i></span>&nbsp&nbsp<strong>Image Preview</strong> </p>
+          <img id="image_uploaded" width="200" height="200" style="border: .7px solid #43b9c7;"/></img>
+
+          <form action="/peeraide/user_image_upload" method="POST" enctype="multipart/form-data">
+            <p id="image-to-upload">Choose an image to upload:</p>
+            <div class="file-upload-container1">
+              <div class="file-upload-override-button1 left">
+                Choose Image
+                <input type="file" class="file-upload-button1" name="image" id="file-upload-button1" accept="image/jpeg,image/jpg,image/png" onchange="loadFile(event)"/>
+              </div>
+
+              <div class="file-upload-filename1 left" id="file-upload-filename1">No file selected</div>
+              <div class="both"></div>
+            </div>
+            <p id="side_note1">  <strong>* Note:</strong> Image must be in a jpg or png format </p>
+            <input type="submit" value="Upload Image" id="submit-file">
+          </form>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="upload_resources" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content" id="upload_resources_modal">
+      <div class="modal-body" id="modal_body_upload_resources">
+        <button type="button" class="close" id="close_upload_resource" data-dismiss="modal">&times;</button>
+        <h4 style="color:#43b9c7; font-family: Century Gothic, sans-serif; font-size: 1.7em; margin-bottom: 0.3cm;"><span><i class="fa fa-upload fa-lg" aria-hidden="true"></i></span>&nbsp&nbspUpload a Resource</h4>
+
+        <hr id="hr_tag_upload_resource"style="margin-bottom: 3.3em;">
+
+        <form class="form-style-7" action="/peeraide/user_resources_upload" method="POST" enctype="multipart/form-data">
+          <ul>
+            <li>
+              <label for="name">Course Department</label>
+              <input type="text" name="courseDep" maxlength="100" class="first">
+              <span>Enter course department (eg: COMP, PSYC, BIO)</span>
+            </li>
+            <li>
+              <label for="course_c">Course Code</label>
+              <input type="text" name="courseCode" maxlength="100">
+              <span>Enter a course code (eg: 1001, 2404, 3004, 4203) </span>
+            </li>
+            <li>
+              <label for="year_r">Year</label>
+              <input type="text" name="resourceYear" maxlength="100">
+              <span>Enter year for the resource (eg: 2001, 2010, 2006)</span>
+            </li>
+
+            <li>
+              <label for="professor_name">Prof/Instructor Name</label>
+              <input type="text" name="prof_name" maxlength="100">
+              <span>Enter Prof/Instructor name for resource (eg: John Doe)</span>
+            </li>
+
+            <p id="choose_uni"> Choose a University: </p>
+
+            <select class="form-control" id="sel1" name="unis">
+              <% peeraide_universities.forEach(function(unis) { %>
+                <option> <%= unis %> </option>
+              <% }); %>
+            </select>
+
+            <p id="resource-to-upload">Choose a resource to upload:</p>
+
+            <div class="file-upload-container">
+              <div class="file-upload-override-button left">
+                Choose resource
+                <input type="file" class="file-upload-button" name="resource" id="file-upload-button" accept="application/pdf" onchange="loadFile(event)"/>
+              </div>
+
+              <div class="file-upload-filename left" id="file-upload-filename">No file selected</div>
+              <div class="both"></div>
+            </div>
+            <p id="side_note">  <strong>* Note:</strong> Resource must be in a pdf format </p>
+
+            <li>
+              <input type="submit" value="Upload Resource" >
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="view_resources" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content" id="view_resources_modal">
+      <div class="modal-body" id="modal_body_view_resources">
+        <button type="button" class="close" id="close_view_resource" data-dismiss="modal">&times;</button>
+        <h4 style="color:#43b9c7; font-family: Century Gothic, sans-serif; font-size: 1.6em; margin-bottom: 0.3cm;"><span><i class="fa fa-folder-o fa-lg" aria-hidden="true"></i></span>&nbsp&nbsp&nbsp<%= user[0].firstname %>'s Uploaded Resources</h4>
+
+        <hr id="hr_tag_view_resource"style="margin-bottom: 2.2em;">
+        <p id="total_points_earned"> <span> <i class="fa fa-money" aria-hidden="true"></i> </span> &nbsp&nbspTotal Points Earned: <%= points_earned %> points</p>
+
+        <div id="wrapper">
+          <table id="keywords" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+                <th><span>Date uploaded</span></th>
+                <th><span>Resource Name</span></th>
+                <th><span>Resource Year</span></th>
+                <th><span>Institution</span></th>
+                <th><span>View Resource</span></th>
+              </tr>
+            </thead>
+
+            <% for(var i = 0; i < resource_uploaded.length; i++) { %>
+              <% var uni = resource_uploaded[i].uniForResource.split("_"); %>
+              <tbody>  
+                <tr>
+                  <td class="lalign"> <%= resource_uploaded[i].dateResourceUploaded %> </td>
+                  <td> <%= resource_uploaded[i].resourceName.toUpperCase() + " " + resource_uploaded[i].resourceCode %> </td>
+                  <td> <%= resource_uploaded[i].resourceYear %> </td>
+                  <td> <%= uni[0] + " " + uni[1] %> </td>
+                  <td> 
+                    <a class="btn btn-default view-pdf" id="view_resource" target="_blank" href=<%= resource_uploaded[i].linkToResource %>>View Resource</a>
+                  </td>
+                </tr>
+              </tbody>
+            <% } %>
+          </table>
+        </div>
+        <p id="simple_note"> <strong>*Note</strong> Each uploaded resource is worth 200 points </p>
+      </div>
+    </div>
+  </div>
+</div>
